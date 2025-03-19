@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开心消消乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <!-- 标题、计分板 -->
+        <header>
+            <h1>开心消消乐</h1>
+            <div class="score-board">
+                <div class="score">分数: <span id="score">0</span></div>
+                <div class="moves">步数: <span id="moves">0</span></div>
+            </div>
+        </header>
+        <!-- 游戏棋盘 -->
+        <div class="game-board" id="board"></div>
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <button id="new-game">新游戏</button>
+            <button id="help">帮助</button>
+        </div>
+    </div>
+
+    <!-- 游戏结束 -->
+    <div id="game-over" class="modal">
+        <div class="modal-content">
+            <h2>游戏结束!</h2>
+            <p>您的最终得分: <span id="final-score">0</span></p>
+            <button id="restart">再玩一次</button>
+        </div>
+    </div>
+    <!-- 游戏规则 -->
+    <div id="help-modal" class="modal">
+        <div class="modal-content">
+            <h2>游戏规则</h2>
+            <p>交换相邻的糖果，匹配三个或更多相同的糖果来得分。</p>
+            <button id="close-help">关闭</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
